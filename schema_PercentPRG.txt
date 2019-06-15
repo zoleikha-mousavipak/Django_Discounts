@@ -36,7 +36,7 @@ schoolNO: INT
 
 
 ###OPERATOR
-usertype: STR
+userstype: STR
 id: INT
 fullname: STR
 operatortype: INT (FOREIGN KEY [OPERATORTYPE])
@@ -48,7 +48,7 @@ title: STR
 ###PERSENTCODE
 id: INT
 type: STR
-userid: INT (FOREIGN KEY [USER])
+userid: INT (FOREIGN KEY [USERdb])
 maxusers: INT
 percent: INT
 percent_date: DATE
