@@ -1,0 +1,78 @@
+MODELS/DB
+
+### USERdb
+id: INT
+userstype: STR
+username: STR
+password: STR
+password2: STR
+email: STR
+
+
+### STUDENT
+id: INT
+userstype: STR
+fullname: STR
+internationalid: INT
+birthdate: DATE
+mobile: INT
+
+
+### PARENT
+id: INT
+userstype: STR
+fullname: STR
+international_childid: INT
+birthdate: DATE
+mobile: INT
+
+###SCHOOL
+userstype: STR
+id: INT
+title: STR
+manager: STR
+tel: INT
+schoolNO: INT
+
+
+###OPERATOR
+userstype: STR
+id: INT
+fullname: STR
+operatortype: INT (FOREIGN KEY [OPERATORTYPE])
+
+###OPERATORTYPE
+id: INT
+title: STR
+
+###PERSENTCODE
+id: INT
+type: STR
+userid: INT (FOREIGN KEY [USERdb])
+maxusers: INT
+percent: INT
+percent_date: DATE
+use_from_date: DATE
+use_to_date: DATE
+used_date: DATE
+5carector: STR
+
+###AMOUNTCODE
+id: INT
+type: STR
+userid: INT (FOREIGN KEY [USERdb])
+amount: INT
+percent: INT
+percent_date: DATE
+use_from_date: DATE
+use_to_date: DATE
+used_date: DATE
+5carector: STR
+
+
+
+
+
+
+
+
