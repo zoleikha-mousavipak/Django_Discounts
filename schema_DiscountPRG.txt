@@ -1,7 +1,7 @@
 MODELS/DB
 
 ### USERdb
-id: int
+id: INT
 userstype: STR
 username: STR
 password: STR
